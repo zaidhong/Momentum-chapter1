@@ -1,38 +1,11 @@
-document.h1 = 'Javascript-Basic'
+document.h1 = 'Javascript-Basic';
 
-const h1 = document.querySelector('.hello:first-child h1')
+const h1 = document.querySelector('.hello:first-child h1');
 
 function handleClick() {
-    h1.className = 'active'
+    const clickedClass = 'clicked';
+    if(h1.className === clickedClass) h1.className = '';
+    else h1.className = clickedClass;
 }
 
-function handleMouseLeave() {
-}
-
-function handleMouseEnter () {
-    h1.style.color = 'yellow'
-}
-
-function handleWindowResize () {
-    document.body.style.backgroundColor = 'tomato'
-}
-function handleWindowCopy () {
-    alert('Copy Ban!')
-}
-
-function handleWindowOffline () {
-    alert('No Wifi')
-}
-function handleWindowOnline () {
-    alert('Connect Wifi')
-}
-
-h1.addEventListener('click', handleClick)
-//h1.onclick=handleClick
-h1.addEventListener('mouseenter', handleMouseEnter)
-h1.addEventListener('mouseleave', handleMouseLeave)
-
-window.addEventListener('resize', handleWindowResize)
-window.addEventListener('copy', handleWindowCopy)
-window.addEventListener('offline', handleWindowOffline)
-window.addEventListener('online', handleWindowOnline)
+h1.addEventListener('click', handleClick);
