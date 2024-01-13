@@ -6,7 +6,11 @@ h1 {
     color: aquamarine;
 }
 
-.active  {
+.clicked {
     color: crimson;
     transition: color 0.5s ease-in-out;
+}
+
+.custom-font {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
